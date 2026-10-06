@@ -1,0 +1,81 @@
+﻿@page "/"
+@inject IJSRuntime JS
+@inject PointList pointList
+@using FacePrototype.Components.Pages
+@implements IDisposable
+@code {
+    string child_id = "faceImage";
+    string image_url = "";
+    public async Task<string> TakeImage(string id)
+    {
+        return await JS.InvokeAsync<string>("takeScreenshot", id);
+    }
+    public async Task SaveFaceImage()
+    {
+        image_url = await TakeImage(child_id);
+    }
+    protected override void OnInitialized()
+    {
+        pointList.OnChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        pointList.OnChanged -= StateHasChanged;
+    }
+}
+<div class="parentDiv">
+    <div class="tableSideDiv">
+        <table>
+            <tr>
+                <th></th>
+                <th>Название</th>
+                <th>IH</th>
+                <th>St бей</th>
+                <th>St беги</th>
+            </tr>
+            @foreach (var point in pointList)
+            {
+                <tr data-id="@point.Name">
+                    <td><input type="checkbox" @bind="@point.IsVisible" /></td>
+                    <td class="pointName"> @point.Name</td>
+                    <td><input type="number" min="0" max="100" @bind="@point.Result" /></td>
+                    <td><input type="number" min="0" max="100" @bind="@point.StressResult1" /></td>
+                    <td><input type="number" min="0" max="100" @bind="@point.StressResult2" /></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="faceSideDiv">
+        <div class="faceSideDivWithoutScroll" id="faceImageAndDescription">
+            <div class="faceImageDiv" id="faceImage" style=@pointList.PhotoUrl.GetPhotoUrl()>
+                <div class="rightSideText">
+                    Правая сторона
+                </div>
+                <div class="leftSideText">
+                    Левая сторона
+                </div>
+                @foreach (var point in pointList)
+                {
+                    <div class="point" data-id="@point.Name"  style=@point.GetStyle()>
+                        @point.Result
+                    </div>
+                }
+            </div>
+            <input type="text" class="saveDiv" id="bioInfo" />
+            <div class="saveDiv">
+                @((MarkupString)pointList.GetDescription())
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // if (firstRender)
+        // {
+        //     await JS.InvokeVoidAsync("pointsHighlighter.init");
+        // }
+        await JS.InvokeVoidAsync("pointsHighlighter.init");
+    }
+}

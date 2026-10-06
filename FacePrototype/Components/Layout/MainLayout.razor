@@ -1,0 +1,80 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
+@inject PointList pointList
+@inject SignalList signalList
+@inject NavigationManager Navigation
+@implements IDisposable
+@code {
+    //string child_id = "faceImage";
+    string child_id = "faceImageAndDescription";
+    string image_url = "";
+    private string currentPath = "";
+    public async System.Threading.Tasks.Task<string> TakeImage(string id)
+    {
+        return await JS.InvokeAsync<string>("takeScreenshot", id);
+    }
+    public async System.Threading.Tasks.Task SaveFaceImage()
+    {
+        image_url = await TakeImage(child_id);
+    }
+    public async System.Threading.Tasks.Task<string> TakeImageAndDescription(string id)
+    {
+        return await JS.InvokeAsync<string>("takeScreenshot", id);
+    }
+    public async System.Threading.Tasks.Task SaveFullFaceImage()
+    {
+        image_url = await TakeImageAndDescription(child_id);
+    }
+    protected override void OnInitialized()
+    {
+        pointList.OnChanged += StateHasChanged;
+        signalList.OnChanged += StateHasChanged;
+        currentPath = Navigation.ToBaseRelativePath(Navigation.Uri);
+        Navigation.LocationChanged += OnLocationChanged;
+    }
+    public void Dispose()
+    {
+        pointList.OnChanged -= StateHasChanged;
+        signalList.OnChanged -= StateHasChanged;
+    }
+    private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
+    {
+        currentPath = Navigation.ToBaseRelativePath(Navigation.Uri);
+        //StateHasChanged();
+    }
+    private void ClickOnClearButton()
+    {
+        switch (currentPath)
+        {
+            case "":
+                pointList.UnselectAll();
+                break;
+            case "signals":
+                signalList.UnselectAll();
+                break;
+
+            case "counter":
+                break;
+
+            default:
+                break;
+        }
+    }
+}
+<div class="page">
+      <div class="sidebar">
+        <NavMenu />
+    </div>
+ 
+    <main>
+        <div class="top-row px-4">
+            <button @onclick="pointList.ChangeGender" class="saveButton">Изменить фото</button>
+            <button @onclick="ClickOnClearButton" class="saveButton">Очистить</button>
+            <button @onclick="SaveFullFaceImage" class="saveButton">Сохранить фото</button>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>

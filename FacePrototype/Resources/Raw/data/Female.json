@@ -1,0 +1,542 @@
+[
+  {
+    "Name": "Предплечье правое",
+    "Result": 0,
+    "CoordinateX": 10,
+    "CoordinateY": 84,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Предплечье левое",
+    "Result": 0,
+    "CoordinateX": 85,
+    "CoordinateY": 84,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Печень",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 27,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Сердце",
+    "Result": 0,
+    "CoordinateX": 53,
+    "CoordinateY": 40,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Нос сердце",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 35,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Висок слева (поджелудочная)",
+    "Result": 0,
+    "CoordinateX": 60,
+    "CoordinateY": 27,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Висок справа (желчный)",
+    "Result": 0,
+    "CoordinateX": 34,
+    "CoordinateY": 27,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Тонкий кишечник лоб",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 21,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Толстый кишечник лоб справа",
+    "Result": 0,
+    "CoordinateX": 39,
+    "CoordinateY": 18,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Толстый кишечник лоб слева",
+    "Result": 0,
+    "CoordinateX": 55,
+    "CoordinateY": 18,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Прямая кишка",
+    "Result": 0,
+    "CoordinateX": 41,
+    "CoordinateY": 40,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Щека справа желудок",
+    "Result": 0,
+    "CoordinateX": 36,
+    "CoordinateY": 37,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Щека слева желудок",
+    "Result": 0,
+    "CoordinateX": 58,
+    "CoordinateY": 37,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Матка (мама)/ папа лоб",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 15,
+    "BorderColor": 6,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "ОТМ (органы малого таза)",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 51,
+    "BorderColor": 6,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Щитовидка",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 75,
+    "BorderColor": 1,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Над ключицей справа",
+    "Result": 0,
+    "CoordinateX": 36,
+    "CoordinateY": 75,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Над ключицей слева",
+    "Result": 0,
+    "CoordinateX": 58,
+    "CoordinateY": 75,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Мочевой шея",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 58,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Почка справа / глаз",
+    "Result": 0,
+    "CoordinateX": 35,
+    "CoordinateY": 32,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Почка слева / глаз",
+    "Result": 0,
+    "CoordinateX": 59,
+    "CoordinateY": 32,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Надпочечники бровь правая",
+    "Result": 0,
+    "CoordinateX": 42,
+    "CoordinateY": 24,
+    "BorderColor": 1,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Надпочечники бровь левая",
+    "Result": 0,
+    "CoordinateX": 52,
+    "CoordinateY": 24,
+    "BorderColor": 1,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Надпочечники шея правая",
+    "Result": 0,
+    "CoordinateX": 37,
+    "CoordinateY": 66,
+    "BorderColor": 1,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Надпочечники шея левая",
+    "Result": 0,
+    "CoordinateX": 57,
+    "CoordinateY": 66,
+    "BorderColor": 1,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Легкие справа",
+    "Result": 0,
+    "CoordinateX": 37,
+    "CoordinateY": 47,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Легкие слева",
+    "Result": 0,
+    "CoordinateX": 57,
+    "CoordinateY": 47,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Почки шея справа",
+    "Result": 0,
+    "CoordinateX": 41,
+    "CoordinateY": 61,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Почки шея слева",
+    "Result": 0,
+    "CoordinateX": 53,
+    "CoordinateY": 61,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Легкие, бронхи",
+    "Result": 0,
+    "CoordinateX": 31,
+    "CoordinateY": 71,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Бронхи",
+    "Result": 0,
+    "CoordinateX": 63,
+    "CoordinateY": 71,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Грудина слева",
+    "Result": 0,
+    "CoordinateX": 60,
+    "CoordinateY": 85,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Грудина справа",
+    "Result": 0,
+    "CoordinateX": 34,
+    "CoordinateY": 85,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Позвоночник шея центр",
+    "Result": 0,
+    "CoordinateX": 75,
+    "CoordinateY": 55,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Шея сзади слева",
+    "Result": 0,
+    "CoordinateX": 80,
+    "CoordinateY": 57,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Шея сзади справа",
+    "Result": 0,
+    "CoordinateX": 70,
+    "CoordinateY": 57,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Ней-Гуань на правой руке",
+    "Result": 0,
+    "CoordinateX": 10,
+    "CoordinateY": 89,
+    "BorderColor": 1,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Ней-Гуань на левой руке",
+    "Result": 0,
+    "CoordinateX": 85,
+    "CoordinateY": 89,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Подреберье правое",
+    "Result": 0,
+    "CoordinateX": 31,
+    "CoordinateY": 94,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Подреберье левое",
+    "Result": 0,
+    "CoordinateX": 63,
+    "CoordinateY": 94,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Бедро правое",
+    "Result": 0,
+    "CoordinateX": 9,
+    "CoordinateY": 60,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Бедро левое",
+    "Result": 0,
+    "CoordinateX": 86,
+    "CoordinateY": 60,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Спина слева",
+    "Result": 0,
+    "CoordinateX": 43,
+    "CoordinateY": 2,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Спина справа",
+    "Result": 0,
+    "CoordinateX": 51,
+    "CoordinateY": 2,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Стопа правая",
+    "Result": 0,
+    "CoordinateX": 9,
+    "CoordinateY": 70,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Стопа левая",
+    "Result": 0,
+    "CoordinateX": 86,
+    "CoordinateY": 70,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Голень правая",
+    "Result": 0,
+    "CoordinateX": 9,
+    "CoordinateY": 65,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Голень левая",
+    "Result": 0,
+    "CoordinateX": 86,
+    "CoordinateY": 65,
+    "BorderColor": 13,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Запястье правое",
+    "Result": 0,
+    "CoordinateX": 10,
+    "CoordinateY": 94,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Запястье левое",
+    "Result": 0,
+    "CoordinateX": 85,
+    "CoordinateY": 94,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Почки спина справа",
+    "Result": 0,
+    "CoordinateX": 31,
+    "CoordinateY": 54,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Почки спина слева",
+    "Result": 0,
+    "CoordinateX": 63,
+    "CoordinateY": 54,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Желудок тело",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 94,
+    "BorderColor": 4,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Затылок (или 2й шейный позвонок)",
+    "Result": 0,
+    "CoordinateX": 47,
+    "CoordinateY": 6,
+    "BorderColor": 1,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  }
+]

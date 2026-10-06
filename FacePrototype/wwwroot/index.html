@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>FacePrototype</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="FacePrototype.styles.css" />
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+    <div class="status-bar-safe-area"></div>
+
+    <div id="app">Loading...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.webview.js" autostart="false"></script>
+    <script src="html2canvas.js"></script>
+    <script>
+        window.takeOldScreenshot = async function (id, name) {
+            var img = "";
+            await html2canvas(document.querySelector("#" + id)).then(canvas => img = canvas.toDataURL("image/png"));
+            var d = document.createElement("a");
+            d.href = img;
+            const el = document.getElementById("bioInfo");
+            var s = el ? el.value : null;
+            d.download = s + ".png";
+            d.click();
+            return img;
+        }
+    </script>
+    <script>
+        function getDefaultFileName() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, "0");
+            const day = String(now.getDate()).padStart(2, "0");
+            const hours = String(now.getHours()).padStart(2, "0");
+            const minutes = String(now.getMinutes()).padStart(2, "0");
+            const seconds = String(now.getSeconds()).padStart(2, "0");
+            return `${day}.${month}.${year}_${hours}-${minutes}-${seconds}`;
+        }
+        window.takeScreenshot = async function (id) {
+            let img = "";
+            await html2canvas(document.querySelector("#" + id))
+                .then(canvas => img = canvas.toDataURL("image/png"));
+            const s = prompt("Введите название файла:", getDefaultFileName());
+            if (s) {
+                const d = document.createElement("a");
+                d.href = img;
+                d.download = s + ".png";
+                d.click();
+            }
+            return img;
+        }
+    </script>
+    <script>
+        window.takeFullScreenshot = async function (id) {
+            const element = document.getElementById(id);
+            const originalOverflow = element.style.overflow;
+            const originalHeight = element.style.height;
+            const scrollTop = element.scrollTop;
+            element.style.overflow = 'visible';
+            element.style.height = element.scrollHeight + 'px';
+            element.scrollTop = 0;
+            let img = "";
+            await html2canvas(element).then(canvas => {
+                img = canvas.toDataURL("image/png");
+            });
+            element.style.overflow = originalOverflow;
+            element.style.height = originalHeight;
+            element.scrollTop = scrollTop;
+            const d = document.createElement("a");
+            d.href = img;
+            d.download = "image.png";
+            d.click();
+            return img;
+        }
+    </script>
+    <script>
+        window.pointsHighlighter = {
+            init: function () {
+                document.querySelectorAll(".point").forEach(p => {
+                    p.addEventListener("mouseenter", function () {
+                        let id = this.getAttribute("data-id");
+                        let row = document.querySelector("tr[data-id='" + id + "']");
+                        if (row) row.classList.add("highlight");
+                        this.classList.add("highlight");
+                    });
+                    p.addEventListener("mouseleave", function () {
+                        let id = this.getAttribute("data-id");
+                        let row = document.querySelector("tr[data-id='" + id + "']");
+                        if (row) row.classList.remove("highlight");
+                        this.classList.remove("highlight");
+                    });
+                });
+
+                document.querySelectorAll("tr[data-id]").forEach(r => {
+                    r.addEventListener("mouseenter", function () {
+                        let id = this.getAttribute("data-id");
+                        let point = document.querySelector(".point[data-id='" + id + "']");
+                        if (point) point.classList.add("highlight");
+                        this.classList.add("highlight");
+                    });
+                    r.addEventListener("mouseleave", function () {
+                        let id = this.getAttribute("data-id");
+                        let point = document.querySelector(".point[data-id='" + id + "']");
+                        if (point) point.classList.remove("highlight");
+                        this.classList.remove("highlight");
+                    });
+                });
+            }
+        };
+    </script>
+    <script src="chart.js"></script>
+</body>
+
+</html>

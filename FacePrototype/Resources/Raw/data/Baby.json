@@ -1,0 +1,322 @@
+[
+  {
+    "Name": "Предплечье правое",
+    "Result": 0,
+    "CoordinateX": 27,
+    "CoordinateY": 40,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Предплечье левое",
+    "Result": 0,
+    "CoordinateX": 71,
+    "CoordinateY": 40,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Печень",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 13,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Сердце",
+    "Result": 0,
+    "CoordinateX": 53,
+    "CoordinateY": 21,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": true
+  },
+  {
+    "Name": "Нос сердце",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 18,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Поджелудочная (висок слева)",
+    "Result": 0,
+    "CoordinateX": 57,
+    "CoordinateY": 15,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Желчный (висок справа)",
+    "Result": 0,
+    "CoordinateX": 41,
+    "CoordinateY": 15,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Тонкий кишечник лоб",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 8,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Толстый кишечник восходящий, аппендицит",
+    "Result": 0,
+    "CoordinateX": 44,
+    "CoordinateY": 8,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Толстый кишечник нисходящий",
+    "Result": 0,
+    "CoordinateX": 54,
+    "CoordinateY": 8,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Прямая кишка",
+    "Result": 0,
+	"CoordinateX": 45,
+    "CoordinateY": 21,
+    "BorderColor": 8,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Органы малого таза",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 26,
+    "BorderColor": 6,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Шея легкие, бронхи",
+    "Result": 0,
+    "CoordinateX": 42,
+    "CoordinateY": 28,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Шея легкие",
+    "Result": 0,
+    "CoordinateX": 56,
+    "CoordinateY": 28,
+    "BorderColor": 9,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Грудина слева",
+    "Result": 0,
+    "CoordinateX": 55,
+    "CoordinateY": 33,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Грудина справа",
+    "Result": 0,
+    "CoordinateX": 43,
+    "CoordinateY": 33,
+    "BorderColor": 2,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Шея центр сзади",
+    "Result": 0,
+    "CoordinateX": 67,
+    "CoordinateY": 25,
+    "BorderColor": 0,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Правое плечо (головка печени)",
+    "Result": 0,
+    "CoordinateX": 36,
+    "CoordinateY": 29,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Точка иммунитета",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 38,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Правое подреберье (печень, желчный)",
+    "Result": 0,
+    "CoordinateX": 42,
+    "CoordinateY": 44,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Тонкий кишечник",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 50,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Толстый кишечник",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 58,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Правая ладонь",
+    "Result": 0,
+    "CoordinateX": 19,
+    "CoordinateY": 52,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Левая ладонь",
+    "Result": 0,
+    "CoordinateX": 81,
+    "CoordinateY": 48,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Правое бедро",
+    "Result": 0,
+    "CoordinateX": 39,
+    "CoordinateY": 69,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Левое бедро (почки, мочеточник)",
+    "Result": 0,
+    "CoordinateX": 59,
+    "CoordinateY": 69,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Правая стопа / голень",
+    "Result": 0,
+    "CoordinateX": 28,
+    "CoordinateY": 92,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Левая стопа / голень",
+    "Result": 0,
+    "CoordinateX": 68,
+    "CoordinateY": 92,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Спина талия слева (почки)",
+    "Result": 0,
+    "CoordinateX": 65,
+    "CoordinateY": 48,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Спина талия справа",
+    "Result": 0,
+    "CoordinateX": 31,
+    "CoordinateY": 48,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "На затылке кишечник",
+    "Result": 0,
+    "CoordinateX": 67,
+    "CoordinateY": 15,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  },
+  {
+    "Name": "Родничок",
+    "Result": 0,
+    "CoordinateX": 49,
+    "CoordinateY": 3,
+    "BorderColor": 12,
+    "BackgroundColor": 5,
+    "FontColor": 0,
+    "IsVisible": false
+  }
+]

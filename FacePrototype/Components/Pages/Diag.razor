@@ -1,0 +1,74 @@
+﻿@page "/diag"
+@inject IJSRuntime JS
+@using Microsoft.AspNetCore.Components.Forms
+<div class="parentDiv">
+    <div class="tableSideDiv">
+        <InputFile OnChange="OnFilesSelected" Multiple accept="application/json" />
+    </div>
+    <div class="faceSideDiv">
+        <div class="faceSideDivWithoutScroll" id="faceImageAndDescription">
+            <canvas id="myChart" style="width:100%; height:100%;"></canvas>
+        </div>
+    </div>
+</div>
+
+@code {
+    private async Task OnFilesSelected(InputFileChangeEventArgs e)
+    {
+        foreach (var file in e.GetMultipleFiles())
+        {
+            using var stream = file.OpenReadStream(50 * 1024 * 1024);
+            // обработка...
+        }
+    }
+}
+<!-- В вашем .razor-файле -->
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("eval", @"
+                const barColors = (ctx) => {
+                    const value = ctx.raw;
+                    if (value < 0) return 'rgb(255, 99, 132)';
+                    if (value < 10) return 'rgb(255, 205, 86)';
+                    return 'rgb(75, 192, 192)';
+                };
+
+                const ctx = document.getElementById('myChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                        datasets: [{
+                            label: 'Sample Data',
+                            data: [-3, 5, 8, 12, -6, 15, 3],
+                            backgroundColor: barColors,
+                            borderRadius: 5
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'top' },
+                            title: {
+                                display: true,
+                                text: 'Bar Chart with Scriptable Colors'
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            ");
+        }
+    }
+}
+

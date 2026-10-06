@@ -1,0 +1,41 @@
+﻿@page "/signals"
+@inject SignalList signalList
+@using FacePrototype.Components.Pages
+@implements IDisposable
+@code {
+    protected override void OnInitialized()
+    {
+        signalList.OnChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        signalList.OnChanged -= StateHasChanged;
+    }
+}
+<div class="parentDiv">
+    <div class="tableSideDiv">
+        <table>
+            @foreach (var signal in signalList)
+            {
+                <tr>
+                    <td><input type="checkbox" @bind="@signal.IsVisible" /></td>
+                    <td> @signal.Name</td>
+                    <td><input type="number" @bind="@signal.Value" min="0" max="1000" /></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="faceSideDiv">
+        <div class="faceSideDivWithoutScroll" id="faceImageAndDescription">
+            <table>
+                @foreach (var signal in signalList.GetDescription())
+                {
+                    <tr>
+                        <td>@signal</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
